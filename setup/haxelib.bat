@@ -6,6 +6,6 @@ cd ..
 echo This shouldn't take long...
 
 haxelib setup C:/haxelib
-haxelib install hxcpp > /dev/null --quiet
+haxelib install hxcpp
 
 echo Finished!

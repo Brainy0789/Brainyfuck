@@ -2,6 +2,6 @@ echo "This shouldn't take long..."
 
 haxelib setup ~/haxelib
 
-haxelib install hxcpp > /dev/null --quiet
+haxelib install hxcpp --quiet
 
 echo "Finished!"
