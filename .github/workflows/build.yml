@@ -24,7 +24,7 @@ jobs:
           
       - name: Setup
         run: |
-          chmod +x setup/haxelib.sb
+          chmod +x setup/haxelib.sh
           ./setup/haxelib.sh
 
       - name: Compile
