@@ -182,6 +182,8 @@ class Brainfuck
             else if (codeArray[i] == 'n')
             {
                 Sys.print('\n');
+
+                output += '\n';
             }
 
             i ++;
