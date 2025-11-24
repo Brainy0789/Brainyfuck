@@ -20,7 +20,14 @@ class Brainyfuck
             while (true)
             {
                 var code = BFHelpers.input('>>> ');
-                var input = BFHelpers.input('Input: ');
+                var codeArray = BFHelpers.arrayizeString(code);
+
+                var useInput = (codeArray.indexOf(',') != -1);
+
+                var input = '';
+
+                if (useInput)
+                    var input = BFHelpers.input('Input: ');
 
                 try
                 {
