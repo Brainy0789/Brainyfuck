@@ -2,6 +2,7 @@ package;
 
 import sys.io.File;
 import hxBrainfuck.Brainfuck;
+import hxBrainfuck.BFHelpers;
 
 //command line stuff
 
@@ -13,6 +14,22 @@ class Brainyfuck
         var args = Sys.args();
         
         bf = new Brainfuck();
+
+        if (args.length == 0)
+        {
+            while (true)
+            {
+                var code = BFHelpers.input('>>> ');
+                var input = BFHelpers.input('Input: ');
+
+                try
+                {
+                    bf.interp(code, input, false, true);
+                } catch(e:Dynamic) {
+                    Sys.println('Error occurred: ' + e);
+                }
+            }
+        }
 
         if (args.length > 2) 
         {
