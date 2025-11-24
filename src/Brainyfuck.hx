@@ -5,7 +5,7 @@ import hxBrainfuck.Brainfuck;
 
 //command line stuff
 
-class Main
+class Brainyfuck
 {
     static var bf:Brainfuck;
     static function main()

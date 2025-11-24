@@ -1,0 +1,4 @@
+--class-path src
+--java bin/java
+--main Brainyfuck
+-D java-boot
