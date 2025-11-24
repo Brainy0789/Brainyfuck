@@ -1,0 +1,3 @@
+echo This shouldn't take long...
+
+haxelib install hxcpp
