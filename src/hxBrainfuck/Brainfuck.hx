@@ -186,6 +186,19 @@ class Brainfuck
                 output += '\n';
             }
 
+            else if (codeArray[i] == '"')
+            {
+                input = BFHelpers.input('Input: ');
+            }
+
+            else if (codeArray[i] == 'i')
+            {
+                var numStr = BFHelpers.input('Enter a number: ');
+                var num = Std.parseInt(numStr);
+                if (num != null) values[pointer] = num & 0xFF;
+                else Sys.println('Invalid number input, ignoring');
+            }
+
             i ++;
         }
         return output;
